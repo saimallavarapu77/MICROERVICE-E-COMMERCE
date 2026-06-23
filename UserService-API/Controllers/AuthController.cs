@@ -26,10 +26,13 @@ public class AuthController : ControllerBase
 
         return Ok("User Registered Successfully");
     }
-
     [HttpPost("login")]
     public IActionResult Login(string username, string password)
     {
+        // AI Review Test: intentionally bad practice
+        var adminPassword = "admin123";
+        Console.WriteLine("User password: " + password);
+
         var user = _context.Users
             .FirstOrDefault(x => x.Username == username && x.Password == password);
 
