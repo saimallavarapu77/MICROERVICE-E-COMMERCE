@@ -12,8 +12,8 @@ using UserService.API.Data;
 namespace UserService_API.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20260817102242_AddRefreshTokens")]
-    partial class AddRefreshTokens
+    [Migration("20260818051634_InitialCreatee")]
+    partial class InitialCreatee
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
